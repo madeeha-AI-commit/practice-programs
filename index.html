@@ -11,43 +11,67 @@ body {
 
 /* Navbar */
 .navbar {
-    background-color: #2e8b57;
+    background-color: #1b5e20;
     padding: 15px;
     text-align: center;
 }
 .navbar a {
     color: white;
-    margin: 15px;
+    margin: 20px;
     text-decoration: none;
     font-size: 18px;
+    font-weight: bold;
+}
+.navbar a:hover {
+    color: #a5d6a7;
 }
 
 /* Hero Section */
 .hero {
     background-image: url("https://images.unsplash.com/photo-1501785888041-af3ef285b470");
     background-size: cover;
+    background-position: center;
     color: white;
-    padding: 100px;
+    padding: 120px 20px;
     text-align: center;
 }
 .hero h1 {
-    font-size: 45px;
+    font-size: 50px;
 }
 .hero p {
-    font-size: 20px;
+    font-size: 22px;
 }
 
-/* About Section */
-.about {
-    padding: 30px;
+/* Section */
+.section {
+    padding: 40px;
     text-align: center;
+}
+
+/* Cards */
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card {
+    width: 250px;
+    margin: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 10px gray;
+}
+.card img {
+    width: 100%;
+}
+.card h3 {
+    margin: 10px;
+}
+.card p {
+    padding: 0 10px 10px;
 }
 
 /* Gallery */
-.gallery {
-    text-align: center;
-    padding: 20px;
-}
 .gallery img {
     width: 250px;
     margin: 10px;
@@ -56,10 +80,10 @@ body {
 
 /* Footer */
 .footer {
-    background-color: #2e8b57;
+    background-color: #1b5e20;
     color: white;
+    padding: 15px;
     text-align: center;
-    padding: 10px;
 }
 </style>
 
@@ -70,36 +94,56 @@ body {
 <!-- Navbar -->
 <div class="navbar">
     <a href="#">Home</a>
-    <a href="#">About</a>
+    <a href="#">Services</a>
     <a href="#">Gallery</a>
+    <a href="#">Contact</a>
 </div>
 
 <!-- Hero -->
 <div class="hero">
-    <h1>Welcome to Nature World 🌿</h1>
-    <p>Feel the beauty of nature</p>
+    <h1>Explore Nature 🌿</h1>
+    <p>Discover the beauty of the world around you</p>
 </div>
 
-<!-- About -->
-<div class="about">
-    <h2>About Nature</h2>
-    <p>Nature gives us peace, fresh air, and beauty. Trees, rivers, mountains and animals make our world amazing.</p>
+<!-- Services -->
+<div class="section">
+    <h2>Our Services</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+            <h3>Mountains</h3>
+            <p>Experience the calm and beauty of mountains.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1493244040629-496f6d136cc3">
+            <h3>Forests</h3>
+            <p>Explore green forests full of life.</p>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+            <h3>Oceans</h3>
+            <p>Feel the peace of deep blue oceans.</p>
+        </div>
+
+    </div>
 </div>
 
 <!-- Gallery -->
-<div class="gallery">
-    <h2>Nature Gallery</h2>
-
-    <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
-    <img src="https://images.unsplash.com/photo-1493244040629-496f6d136cc3">
-    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
-
+<div class="section gallery">
+    <h2>Gallery</h2>
+    <img src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e">
+    <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e">
+    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb">
 </div>
 
 <!-- Footer -->
 <div class="footer">
-    <p>Made by Madeeha 🌸</p>
+    <p>© 2026 Nature World | Made by Madeeha 🌸</p>
 </div>
 
 </body>
-</html>
+            </html>
